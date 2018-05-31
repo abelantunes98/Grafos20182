@@ -37,7 +37,7 @@ public class ImportSimpleGraphGML {
 		Graph<Object, RelationshipEdge> graphgml = new SimpleGraph<>(RelationshipEdge.class);
 
 		try {
-			gmlImporter.importGraph(graphgml, readFile("/home/./files/rede.gml"));
+			gmlImporter.importGraph(graphgml, readFile("./files/rede.gml"));
 		} catch (ImportException e) {
 			throw new RuntimeException(e);
 		}
